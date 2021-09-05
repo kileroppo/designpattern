@@ -5,11 +5,23 @@ import com.example.demodespatter.designpattern.factory.simplefactdemo.personsouc
 import com.example.demodespatter.designpattern.factory.simplefactdemo.personsouce.audit.AbsConfigAuditInstitiution;
 import com.example.demodespatter.designpattern.factory.simplefactdemo.personsouce.audit.DefaultAuditFactory;
 import com.example.demodespatter.designpattern.factory.simplefactdemo.personsouce.audit.IAuditInstitiution;
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.AbsWhore;
 
 /**
  * Created by lizp on 2021-09-05.
  */
-public class IPersonFactoryImpl extends AbsConfigAuditInstitiution implements IPersonFactory  {
+public class PersonFactoryImpl extends AbsConfigAuditInstitiution implements IPersonFactory  {
+	
+	private  String style;
+	/**
+	 *  create whore
+	 * @author create by killer 2021-09-05
+	 * @return
+	 */
+	public PersonFactoryImpl(String style){
+		this.style = style;
+	}
+	
 	/**
 	 * interview
 	 * @return String
@@ -18,9 +30,9 @@ public class IPersonFactoryImpl extends AbsConfigAuditInstitiution implements IP
 	 * @creed: Talk is cheap,show me the code
 	 */
 	@Override
-	public String interview() {
+	public AbsWhore interview(AbsWhore absWhore) {
 		System.out.println("开始面试");
-		return "面试成功";
+		return absWhore;
 	}
 	
 	/**
@@ -31,8 +43,10 @@ public class IPersonFactoryImpl extends AbsConfigAuditInstitiution implements IP
 	 * @creed: Talk is cheap,show me the code
 	 */
 	@Override
-	public void train() {
+	public AbsWhore train(AbsWhore absWhore) {
 		System.out.println("开始 训练");
+		absWhore.style = style +"trained";
+		return absWhore;
 	}
 	
 	

@@ -1,10 +1,10 @@
-package com.example.demodespatter.designpattern.factory.simplefactdemo.women;
+package com.example.demodespatter.designpattern.factory.simplefactdemo.store.whoreimpl;
 
 import com.example.demodespatter.designpattern.factory.simplefactdemo.constant.WSytleConstantdd;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.store.abs.AbsWhore;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.women.impl.BitisAbsWhore;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.women.impl.LolitaAbsWhore;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.women.impl.MercySisterAbsWhore;
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.AbsWhore;
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.whoreimpl.impl.BitisAbsWhore;
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.whoreimpl.impl.LolitaAbsWhore;
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.whoreimpl.impl.MercySisterAbsWhore;
 
 public class WhoreFactory {
 

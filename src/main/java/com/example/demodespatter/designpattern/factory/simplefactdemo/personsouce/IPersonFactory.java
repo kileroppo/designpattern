@@ -1,5 +1,7 @@
 package com.example.demodespatter.designpattern.factory.simplefactdemo.personsouce;
 
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.AbsWhore;
+
 /**
  *  工厂lei
  * @author create by killer 2021-09-05
@@ -15,7 +17,7 @@ public interface IPersonFactory   {
      * @creed: Talk is cheap,show me the code
      * @return  String
      */
-	 String interview();
+	 AbsWhore interview(AbsWhore absWhore);
 	
 	/**
 	 *  train
@@ -24,5 +26,5 @@ public interface IPersonFactory   {
 	 * @creed: Talk is cheap,show me the code
 	 * @return  String
 	 */
-	void train();
+	AbsWhore train(AbsWhore absWhore);
 }

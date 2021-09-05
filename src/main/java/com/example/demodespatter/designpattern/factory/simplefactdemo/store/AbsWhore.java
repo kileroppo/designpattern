@@ -1,6 +1,4 @@
-package com.example.demodespatter.designpattern.factory.simplefactdemo.store.abs;
-
-import com.example.demodespatter.designpattern.factory.simplefactdemo.personsouce.IPersonFactory;
+package com.example.demodespatter.designpattern.factory.simplefactdemo.store;
 
 /**
  * AbsWhore
@@ -11,21 +9,11 @@ public abstract class AbsWhore {
 
 
     public String style;
+    
+    public boolean isTrain;
 //    protected  String style = null;
-
- 
-    /**
-     *  interViewAndTranin
-     * @author lizhipeng
-     * @date 2021-09-05 9:44
-     * @param
-     * @return void
-     */
-    protected void interViewAndTranin(IPersonFactory personFactory){
-        personFactory.interview();
-        personFactory.train();
-        System.out.println("使用官方推荐机构进行的面试和训练！！！");
-    }
+    
+//    public abstract  AbsWhore enterWhore( );
 
     /**
      *

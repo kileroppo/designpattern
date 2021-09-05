@@ -1,4 +1,4 @@
-package com.example.demodespatter.designpattern.factory.simplefactdemo.store.abs;
+package com.example.demodespatter.designpattern.factory.simplefactdemo.store.istroeimpl;
 
 public interface IBrothel {
 
@@ -18,8 +18,6 @@ public interface IBrothel {
      *  start service
      * @author lizhipeng
      * @date 2021-09-05 9:23
-     * @param null
-     * @creed: Talk is cheap,show me the code
      * @return string
      */
     public String startService();
@@ -29,8 +27,6 @@ public interface IBrothel {
      *  submit order
      * @author lizhipeng
      * @date 2021-09-05 9:24
-     * @param null
-     * @creed: Talk is cheap,show me the code
      * @return void
      */
      

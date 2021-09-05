@@ -1,9 +1,8 @@
-package com.example.demodespatter.designpattern.factory.simplefactdemo.store;
+package com.example.demodespatter.designpattern.factory.simplefactdemo.store.istroeimpl;
 
 
-import com.example.demodespatter.designpattern.factory.simplefactdemo.store.abs.IBrothel;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.store.abs.AbsWhore;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.women.WhoreFactory;
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.AbsWhore;
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.whoreimpl.WhoreFactory;
 import com.example.demodespatter.designpattern.factory.simplefactdemo.constant.WSytleConstantdd;
 
 public class FirstBorthel implements IBrothel {

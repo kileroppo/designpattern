@@ -2,11 +2,9 @@ package com.example.demodespatter.designpattern.factory.simplefactdemo.store;
 
 
 import com.example.demodespatter.designpattern.factory.simplefactdemo.constant.WSytleConstantdd;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.store.abs.AbsBorthel;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.store.abs.AbsWhore;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.women.impl.BitisAbsWhore;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.women.impl.LolitaAbsWhore;
-import com.example.demodespatter.designpattern.factory.simplefactdemo.women.impl.MercySisterAbsWhore;
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.whoreimpl.impl.BitisAbsWhore;
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.whoreimpl.impl.LolitaAbsWhore;
+import com.example.demodespatter.designpattern.factory.simplefactdemo.store.whoreimpl.impl.MercySisterAbsWhore;
 
 public class SecondBorthel extends AbsBorthel {
 
