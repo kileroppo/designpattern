@@ -17,7 +17,7 @@ public class testControlPannel {
         LightOffCommand lightOffCommand = new LightOffCommand(light);
 
 
-        controlPannel.setButtonFunc(1,lightOnCommand);
+        controlPannel.setButtonFunc(2,lightOnCommand);
         controlPannel.setButtonFunc(0,lightOffCommand);
 
         controlPannel.sendCommand(1);
