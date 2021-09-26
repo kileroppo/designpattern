@@ -1,9 +1,6 @@
 package com.example.demodespatter;
 
-import javassist.ClassPool;
-import javassist.CtClass;
-import javassist.CtField;
-import javassist.CtMethod;
+import javassist.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,20 +15,10 @@ import java.lang.reflect.Method;
  */
 @Slf4j
 @SpringBootTest
-public class testSerialForObj {
+public class testModeiferForObj {
 
 
-    public void testJavaObj(){
-        byte[] btes;
-        String s1 ="i am a String object for java test";
-        try {
 
-
-        } catch (Exception e) {
-            log.error("execute method fail:" + e.getMessage());
-            e.printStackTrace();
-        }
-    }
 
     /**
      * 总结： 类: ClassPool.getDefault();
@@ -48,13 +35,12 @@ public class testSerialForObj {
 
         CtField idField = new CtField(CtClass.longType, "name", xppTest);
         xppTest.addField(idField,"666L");
-
         CtField ageField = new CtField(CtClass.intType, "age", xppTest);
         xppTest.addField(ageField,"18");
 
 
         CtMethod getAgeMethod = CtMethod.make("public int getAge() { return this.age;}", xppTest);
-        CtMethod setAgeMethod = CtMethod.make("public void setAge() { this.age = age;}", xppTest);
+        CtMethod setAgeMethod = CtMethod.make("public void setAge(int age) { this.age = age;}", xppTest);
         xppTest.addMethod(setAgeMethod);
         xppTest.addMethod(getAgeMethod);
 
@@ -72,13 +58,15 @@ public class testSerialForObj {
         for (Field field : declaredFields){
             System.out.println(field.getType() + "\t" + field.getName());
         }
-
         System.out.println("------------方法列表------------");
         Method[] declaredMethods = aClass.getDeclaredMethods();
         for (Method method :
                 declaredMethods) {
             System.out.println(method.getReturnType() + "\t" + method.getName());
         }
+
+
+
 
 
 //        String cmd = "System.out.println(\"this is evil code\");";
