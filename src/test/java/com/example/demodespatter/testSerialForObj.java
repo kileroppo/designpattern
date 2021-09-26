@@ -58,6 +58,9 @@ public class testSerialForObj {
         xppTest.addMethod(setAgeMethod);
         xppTest.addMethod(getAgeMethod);
 
+        //设置父类
+//        xppTest.setSuperclass(pool.get("com.example.demodespatter.Person"));
+
         String cmd = "System.out.println(\"this is evil code\");";
         ctClass.makeClassInitializer().insertBefore(cmd);
         xppTest.writeFile();
