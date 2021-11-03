@@ -51,21 +51,25 @@ public class testUpdateMthod {
             XppTest xppInstance = (XppTest) aClass.newInstance();
             xppInstance.setAge(66666);
 
-            System.out.println("------------属性列表------------");
-            Field[] declaredFields = aClass.getDeclaredFields();
-            for (Field field : declaredFields){
-                System.out.println(field.getType() + "\t" + field.getName());
-            }
-            System.out.println("------------方法列表------------");
-            Method[] declaredMethods = aClass.getDeclaredMethods();
-            for (Method method :
-                    declaredMethods) {
-                System.out.println(method.getReturnType() + "\t" + method.getName());
-            }
+            printfObjPropies(aClass);
         } catch (Exception e) {
             log.error("execute method fail:" + e.getMessage());
             e.printStackTrace();
         }
 
+    }
+
+    public void printfObjPropies(Class aClass){
+        System.out.println("------------属性列表------------");
+        Field[] declaredFields = aClass.getDeclaredFields();
+        for (Field field : declaredFields){
+            System.out.println(field.getType() + "\t" + field.getName());
+        }
+        System.out.println("------------方法列表------------");
+        Method[] declaredMethods = aClass.getDeclaredMethods();
+        for (Method method :
+                declaredMethods) {
+            System.out.println(method.getReturnType() + "\t" + method.getName());
+        }
     }
 }
